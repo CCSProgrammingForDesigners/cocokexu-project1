@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Janpan'sfood-Sushi
+    </title>
+    <style>
+    	*{margin:0;padding:0;}
+      body,html{height:100%;}
+      main{height:100%;padding-top:40px;}
+      a:link,a:visited{color:#666}
+      a{text-decoration: none;}
+      a:hover{background-color:#06629D;color:#fff}
+      .mask{
+       position: absolute;
+       top:0;
+       box-sizing: border-box;
+       width:100%;
+       padding:10px;
+       color:#fff; /*字体颜色*/
+       font-size:16px;/*字体大小*/
+       font-weight:normal;/*如果要加粗normal改bold*/
+    background:rgba(0,0,0,.4)
+      }
+      #div1{
+      	height:100%;
+     	 	background:url(http://gbc-cdn-public-media.azureedge.net/img61164.1426x713.jpg) scroll no-repeat;/*url改一下*/
+      	background-size:100% 100%;
+      }
+      header{
+      		border-bottom: 1px solid #ccc;
+      		position:fixed;top:0;width:100%;
+      		background:#fff;
+      }
+      header li{display: inline-block;}
+      header a{
+      	display: inline-block;
+      	height: 40px;
+      	padding:0 20px;
+      	line-height:40px;
+      	}
+      .food-list{text-align:center;
+      	width:80%;
+      	margin: 0 auto;
+      }
+      .food-list>li{
+      	display: inline-block;
+      	width: 200px;height:200px; /*圆形的尺寸*/
+      	margin:20px 40px; /*每个圆之间的边距，这里代表上下间距20，左右间距40*/
+      	border-radius: 50%;/*圆角的值，50%是自身宽度的50%，方形的四个角会变成圆弧，50%会刚好让正方形变成圆*/
+      	border:1px solid #ccc;
+        overflow: hidden;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+      }
+      .steps{
+      	box-sizing: border-box;
+      	float:left;
+      	width:25%;/*每一个方格的宽，现在一排放了四个，所以宽度是25%，可以根据数量修改*/
+      	height:200px;/*方格的高*/
+      	border:1px solid #ccc;
+        background:url(sushi123/1.jpg ) no-repeat;
+        background-size:cover;
+        position:relative;
+      }
+      .step2{
+         background-image:url(sushi123/2.jpg)
+      }
+      .step3{
+         background-image:url(sushi123/3.jpg)
+      }
+      .step4{
+         background-image:url(sushi123/4.jpg)
+      }
+      .step5{
+         background-image:url(sushi123/5.jpg)
+      }
+      .step6{
+         background-image:url(sushi123/6.jpg)
+      }
+      .step7{
+         background-image:url(sushi123/7.jpg)
+      }
+      .step8{
+         background-image:url(sushi123/8.jpg)
+      }
+      .food-list img{width:100%;height:100%;}
+      .food-list li:hover{
+       -webkit-transform: scale(1.1);
+       transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+  <main>
+     		<div id="div1">
+
+     		</div>
+     		<div id="div2">
+          <div style="font-size:35px;text-align:center；margin:8px;margin-top:8px;">
+     			classification of sushi</div>
+
+							<ul class="food-list">
+									<li><img src="https://pic2.zhimg.com/6568eb6bd3d463e08d2d72110ad655b1_b.jpg" /></li>
+									<li><img src="https://pic4.zhimg.com/c0d6157370996e0029665a59e200fdfb_b.jpg" /></li>
+									<li><img src="https://pic1.zhimg.com/fa947266098ef0acba1fa1879e8b6248_b.jpg" /></li>
+									<li><img src="https://pic2.zhimg.com/f14f73b7c77a5b69b1df970135194cf1_b.jpg" /></li>
+									<li><img src="https://pic4.zhimg.com/1b6c4f4947cebe8eaf57de8be8b95ec7_b.jpg" /></li>
+									<li><img src="https://pic1.zhimg.com/631a86797ed3af2f520fa768ec596974_b.jpg" /></li>
+							</ul>
+     		</div>
+     		<div id="div3">
+     		  <div class="steps step1">
+            <div class="mask">
+              step1
+            </div>
+     		  	<!-- 这里可以添加内容-->
+
+     		  </div>
+     			<div class="steps step2">
+            <div class="mask">
+              step2
+            </div>
+
+     			</div>
+     			<div class="steps step3">
+            <div class="mask">
+              step3
+            </div>
+
+     			</div>
+     			<div class="steps step4">
+            <div class="mask">
+              step4
+            </div>
+
+     			</div>
+     		 	<div class="steps step5">
+            <div class="mask">
+              step5
+            </div>
+
+     		 	</div>
+     			<div class="steps step6">
+            <div class="mask">
+              step6
+            </div>
+
+     			</div>
+     			<div class="steps step7">
+            <div class="mask">
+              step7
+            </div>
+
+     			</div>
+     			<div class="steps step8">
+            <div class="mask">
+              step8
+            </div>
+
+     			</div>
+     		</div>
+     </main>
+  </body>
+</html>
